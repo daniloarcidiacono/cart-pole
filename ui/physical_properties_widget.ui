@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PhysicalPropertiesWidget</class>
+ <widget class="QWidget" name="PhysicalPropertiesWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>204</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblGravity">
+     <property name="text">
+      <string>Gravity (m/s^2):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnGravity</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QDoubleSpinBox" name="spnGravity"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="lblCartMass">
+     <property name="text">
+      <string>Cart mass (kg):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnCartMass</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDoubleSpinBox" name="spnCartMass"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="lblPoleMass">
+     <property name="text">
+      <string>Pole mass (kg):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnPoleMass</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDoubleSpinBox" name="spnPoleMass"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lblPoleLength">
+     <property name="text">
+      <string>Pole length (m):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnPoleLength</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDoubleSpinBox" name="spnPoleLength"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="lblCartFriction">
+     <property name="text">
+      <string>Cart friction:</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnCartFriction</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QDoubleSpinBox" name="spnCartFriction"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="lblPoleFriction">
+     <property name="text">
+      <string>Pole friction:</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnPoleFriction</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QDoubleSpinBox" name="spnPoleFriction"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

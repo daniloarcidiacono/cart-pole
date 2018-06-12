@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CosmeticPropertiesWidget</class>
+ <widget class="QWidget" name="CosmeticPropertiesWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>177</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblBackgroundColor">
+     <property name="text">
+      <string>Background color:</string>
+     </property>
+     <property name="buddy">
+      <cstring>colBackground</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="ColorPickerWidget" name="colBackground" native="true"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="lblCartColor">
+     <property name="text">
+      <string>Cart color:</string>
+     </property>
+     <property name="buddy">
+      <cstring>colCart</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="ColorPickerWidget" name="colCart" native="true"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="lblCartWidth">
+     <property name="text">
+      <string>Cart width (m):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnCartWidth</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDoubleSpinBox" name="spnCartWidth"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lblCartHeight">
+     <property name="text">
+      <string>Cart height(m):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnCartHeight</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDoubleSpinBox" name="spnCartHeight"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="lblPoleColor">
+     <property name="text">
+      <string>Pole color:</string>
+     </property>
+     <property name="buddy">
+      <cstring>colPole</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="ColorPickerWidget" name="colPole" native="true"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="lblPoleThickness">
+     <property name="text">
+      <string>Pole thickness (m):</string>
+     </property>
+     <property name="buddy">
+      <cstring>spnPoleThickness</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QDoubleSpinBox" name="spnPoleThickness">
+     <property name="singleStep">
+      <double>0.050000000000000</double>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ColorPickerWidget</class>
+   <extends>QWidget</extends>
+   <header>src.widgets.color_picker_widget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>spnCartWidth</tabstop>
+  <tabstop>spnCartHeight</tabstop>
+  <tabstop>spnPoleThickness</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
