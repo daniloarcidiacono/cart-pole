@@ -29,10 +29,16 @@ class Ui_SimulationWidget(object):
         self.cboCartAgent.setObjectName("cboCartAgent")
         self.cboCartAgent.addItem("")
         self.cboCartAgent.addItem("")
+        self.cboCartAgent.addItem("")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.cboCartAgent)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.btnStartPause = QtWidgets.QPushButton(SimulationWidget)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icons/icons/play.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btnStartPause.setIcon(icon)
+        self.btnStartPause.setIconSize(QtCore.QSize(16, 16))
+        self.btnStartPause.setShortcut("")
         self.btnStartPause.setObjectName("btnStartPause")
         self.horizontalLayout.addWidget(self.btnStartPause)
         self.btnReset = QtWidgets.QPushButton(SimulationWidget)
@@ -46,13 +52,15 @@ class Ui_SimulationWidget(object):
 
     def retranslateUi(self, SimulationWidget):
         _translate = QtCore.QCoreApplication.translate
-        SimulationWidget.setWindowTitle(_translate("SimulationWidget", "Form"))
+        SimulationWidget.setWindowTitle(_translate("SimulationWidget", "Simulation"))
         self.lblIntegrator.setText(_translate("SimulationWidget", "Integrator:"))
         self.cboIntegrator.setItemText(0, _translate("SimulationWidget", "Runge-Kutta (4th order)"))
         self.cboIntegrator.setItemText(1, _translate("SimulationWidget", "Euler"))
         self.lblCartAgent.setText(_translate("SimulationWidget", "Cart agent: "))
-        self.cboCartAgent.setItemText(0, _translate("SimulationWidget", "User keyboard"))
+        self.cboCartAgent.setItemText(0, _translate("SimulationWidget", "Heuristic"))
         self.cboCartAgent.setItemText(1, _translate("SimulationWidget", "Deep Q-learning"))
+        self.cboCartAgent.setItemText(2, _translate("SimulationWidget", "User keyboard"))
         self.btnStartPause.setText(_translate("SimulationWidget", "Start"))
         self.btnReset.setText(_translate("SimulationWidget", "Reset"))
 
+import resources_rc

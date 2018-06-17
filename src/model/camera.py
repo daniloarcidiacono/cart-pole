@@ -4,7 +4,7 @@ from PyQt5.QtGui import QTransform
 class Camera:
     def __init__(self):
         self._center = [0, 0]
-        self._horizontalLength = 10
+        self._horizontalLength = 5
 
     # Returns the camera transform
     def getViewTransform(self):
